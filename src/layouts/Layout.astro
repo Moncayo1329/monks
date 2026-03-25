@@ -8,7 +8,7 @@ interface Props{
 
 }
 
-const {title = "Monks Basketball", description ="Club de Baloncesto Monks", image ="/images/band.jpg" } = Astro.props;
+const {title = "Baloncesto Monks", description ="Club de Baloncesto Monks", image ="/images/band.jpg" } = Astro.props;
 
 
 
@@ -31,8 +31,20 @@ const {title = "Monks Basketball", description ="Club de Baloncesto Monks", imag
 		<meta name="generator" content={Astro.generator} />
 		<meta property="og:image" content={image}/>
 		<title>{title}</title>
+		<style>
+    body {
+      background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+        url('/src/Pictures/monkspicture.png');   /* ← cambia esta ruta */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;   /* opcional: fondo fijo al hacer scroll */
+      min-height: 100vh;
+    }
+  </style>
 	</head>
-	<body class="min-h-screen">
+	<body class="min-h-screen bg-[#1a2428] text-white">
 		<Header/>
 		<slot />
 	</body>

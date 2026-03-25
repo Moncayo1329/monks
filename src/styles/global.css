@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+  .hero h1 {
+    margin: 0.05em 0;     /* ajusta el espacio entre las palabras */
+  }
