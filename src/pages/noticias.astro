@@ -1,7 +1,31 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import noticias from '../Data/Noticias.json'
 ---
 
-<Layout title="Noticias">
-  <h1>Últimas noticias</h1>
+<Layout title="Noticias"> 
+  <section class="py-12 bg-transparent">
+ <div class="max-w-6xl mx-auto px-6">
+<div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+
+
+{noticias.map((noticia, index) => (
+ <div 
+  key={index} 
+  className="p-6 rounded-2xl transition-all duration-300 group hover:bg-zinc-900/20"
+        >
+  <h3 class="text-white text-2xl font-semibold mb-4 group-hover:text-blue-400 transition-colors">
+            {noticia.title}
+          </h3>
+          
+          <p class="text-zinc-400 text-[17px] leading-relaxed">
+            {noticia.description}
+          </p>
+  </div>
+ ))}
+  
+</div>
+</div>
+</section>
+ 
 </Layout>
