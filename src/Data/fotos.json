@@ -22,7 +22,7 @@
 
          "id": 3,
     "title": "Foto en la montaña",
-    "image": "cover.jpeg",
+    "image": "Picture13.JPG",
     "alt": "Descripción de la foto 1",
     "date": "2025-03-20"
 
@@ -30,7 +30,7 @@
      {
      "id": 3,
     "title": "Foto en la montaña",
-    "image": "cover.jpeg",
+    "image": "Picture14.JPG",
     "alt": "Descripción de la foto 1",
     "date": "2025-03-20"
 
@@ -64,7 +64,47 @@
 ,{
         "id": 7,
     "title": "Foto en la montaña",
-    "image": "Picture13.jpeg",
+    "image": "Picture12.JPG",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    }
+    ,{
+        "id": 8,
+    "title": "Foto en la montaña",
+    "image": "Picture15.JPG",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    }
+    ,{
+        "id": 9,
+    "title": "Foto en la montaña",
+    "image": "Picture17.JPG",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    }
+    ,{
+        "id": 10,
+    "title": "Foto en la montaña",
+    "image": "Picture18.JPG",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    }
+    ,{
+        "id": 11,
+    "title": "Foto en la montaña",
+    "image": "Picture19.JPG",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    }
+    ,{
+        "id": 12,
+    "title": "Foto en la montaña",
+    "image": "Picture21.JPG",
     "alt": "Descripción de la foto 1",
     "date": "2025-03-20"
 
