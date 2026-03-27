@@ -1,0 +1,72 @@
+[
+    {
+
+    "id": 1,
+    "title": "Foto en la montaña",
+    "image": "cover.jpeg",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    },
+
+    {
+
+         "id": 2,
+    "title": "Foto en la montaña",
+    "image": "test.jpeg",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    },
+    {
+
+         "id": 3,
+    "title": "Foto en la montaña",
+    "image": "cover.jpeg",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    },
+     {
+     "id": 3,
+    "title": "Foto en la montaña",
+    "image": "cover.jpeg",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    }, 
+
+    {
+
+         "id": 4,
+    "title": "Foto en la montaña",
+    "image": "Picture8.jpg",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    },{
+        "id": 5,
+    "title": "Foto en la montaña",
+    "image": "Picture10.jpeg",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    }
+    ,{
+        "id": 6,
+    "title": "Foto en la montaña",
+    "image": "Picture11.jpeg",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    }
+
+,{
+        "id": 7,
+    "title": "Foto en la montaña",
+    "image": "Picture13.jpeg",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    }
+]

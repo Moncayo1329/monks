@@ -1,9 +1,47 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import fotos from '../Data/fotos.json'
+import { Image} from 'astro:assets'
+// cargando todas las imagenes
+const allImages = import.meta.glob<{ default: ImageMetadata }>('/src/Pictures/**/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { 
+  eager: true 
+});
 ---
 
 <Layout title="fotografias">
-  <h1>Fotografias</h1>
-  <p>Soy un desarrollador que usa Astro porque es rápido 🚀</p>
+  <section class="py-12 bg-transparent">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {fotos.map((foto) => {
+        const imagePath = `/src/Pictures/${foto.image}`;
+        const imageData = allImages[imagePath];
+   if (!imageData) {
+          return (
+            <p class="text-red-500">{foto.image}</p>
+          );
+        }
+
+        return (
+          <div class="overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all group">
+            <Image 
+              src={imageData.default} 
+              alt={foto.alt}
+              width={900}
+              height={600}
+              class="w-full h-auto object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  </section>
 
 </Layout>
