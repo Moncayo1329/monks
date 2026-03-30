@@ -1,6 +1,43 @@
 [
     {
 
+    "id": 16,
+    "title": "Foto en la montaña",
+    "image": "Picture25.jpeg",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    },
+     {
+
+    "id": 15,
+    "title": "Foto en la montaña",
+    "image": "Picture24.jpeg",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    },
+    
+    {
+
+    "id": 14,
+    "title": "Foto en la montaña",
+    "image": "Picture23.jpeg",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    },
+    {
+
+    "id": 13,
+    "title": "Foto en la montaña",
+    "image": "Picture22.jpeg",
+    "alt": "Descripción de la foto 1",
+    "date": "2025-03-20"
+
+    },
+    {
+
     "id": 1,
     "title": "Foto en la montaña",
     "image": "cover.jpeg",
