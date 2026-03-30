@@ -21,6 +21,14 @@ import noticias from '../Data/Noticias.json'
           <p class="text-zinc-400 text-[17px] leading-relaxed">
             {noticia.description}
           </p>
+          <a 
+    href={noticia.Link} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="inline-block mt-4 px-5 py-2  hover:bg-orange-700 text-white text-sm font-medium rounded-lg transition-colors"
+  >
+    Ver noticia completa →
+  </a>
   </div>
  ))}
   
