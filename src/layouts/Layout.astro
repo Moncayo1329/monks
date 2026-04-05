@@ -11,9 +11,9 @@ interface Props{
 
 const {title = "Baloncesto Monks", description ="Club de Baloncesto Monks", image ="/images/cover.jpeg" } = Astro.props;
 
+// Google analytics 
 
-
-
+const GA_ID = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 
 ---
 
@@ -32,6 +32,30 @@ const {title = "Baloncesto Monks", description ="Club de Baloncesto Monks", imag
 		<meta name="generator" content={Astro.generator} />
 		<meta property="og:image" content={image}/>
 		<title>{title}</title>
+
+<!-- google analytics --> 
+
+{
+            GA_ID && import.meta.env.PROD && (
+                <>
+                    <script 
+                        is:inline 
+						async
+                        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+                    ></script>
+                    
+                    <script is:inline define:vars={{ GA_ID }}>
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', GA_ID);
+                    </script>
+                </>
+            )
+        }
+
+
+
 		<style>
     body {
       background-image: 
